@@ -31,7 +31,6 @@ function chatbotResponse(userMessage) {
 
     if(userMessage.length > 5 || userMessage === 'hi') {
         let result = arrayOfPossibleMessages.filter(msg => msg.message.includes(userMessage.toLowerCase()));
-        //    let result = msg.message.includes(userMessage.toLowerCase());
            if(result.length > 0) {
            let response = result[0].response;
            chatbotMessage = response;
